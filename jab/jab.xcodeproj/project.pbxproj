@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		81908E8F29FB50EC00D730C4 /* jabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81908E8E29FB50EC00D730C4 /* jabApp.swift */; };
-		81908E9129FB50EC00D730C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81908E9029FB50EC00D730C4 /* ContentView.swift */; };
+		81908E9129FB50EC00D730C4 /* CongratulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81908E9029FB50EC00D730C4 /* CongratulationView.swift */; };
 		81908E9329FB50ED00D730C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81908E9229FB50ED00D730C4 /* Assets.xcassets */; };
 		81908E9629FB50ED00D730C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81908E9529FB50ED00D730C4 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		81908E8B29FB50EC00D730C4 /* jab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81908E8E29FB50EC00D730C4 /* jabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jabApp.swift; sourceTree = "<group>"; };
-		81908E9029FB50EC00D730C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		81908E9029FB50EC00D730C4 /* CongratulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationView.swift; sourceTree = "<group>"; };
 		81908E9229FB50ED00D730C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81908E9529FB50ED00D730C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				81908E8E29FB50EC00D730C4 /* jabApp.swift */,
-				81908E9029FB50EC00D730C4 /* ContentView.swift */,
+				81908E9029FB50EC00D730C4 /* CongratulationView.swift */,
 				81908E9229FB50ED00D730C4 /* Assets.xcassets */,
 				81908E9429FB50ED00D730C4 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81908E9129FB50EC00D730C4 /* ContentView.swift in Sources */,
+				81908E9129FB50EC00D730C4 /* CongratulationView.swift in Sources */,
 				81908E8F29FB50EC00D730C4 /* jabApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
