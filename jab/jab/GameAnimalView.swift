@@ -80,7 +80,7 @@ struct GameAnimalView: View {
                     ZStack{
                         
                         Button {
-                            ""
+                            print("okay")
                         } label: {
                             Text("Cachorro")
                         }
