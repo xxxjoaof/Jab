@@ -18,13 +18,13 @@ struct ContentView: View {
             //Background confetti de fundo geral
             Image("Confetti")
                 .resizable()
-                .scaledToFill()
+                .scaledToFit()
                 .frame(width: 500, height: 1400, alignment: .center)
                 .position(x: 0, y: 600)
             
             Image("Logo_App")
                 .resizable()
-                .scaledToFill()
+                .scaledToFit()
                 .frame(width: 100, height: 100)
                 .position(x: 350, y: 25)
             
@@ -47,7 +47,7 @@ struct ContentView: View {
                     //Imagem batendo palmas
                     Image("Batendo_Palmas")
                         .resizable()
-                        .scaledToFill()
+                        .scaledToFit()
                         .frame(width: 200, height: 200, alignment: .center)
                 }
                 
