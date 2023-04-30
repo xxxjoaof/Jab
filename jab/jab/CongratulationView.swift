@@ -19,7 +19,7 @@ struct ContentView: View {
             Image("Confetti")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 500, height: 1400, alignment: .center)
+                .frame(width: 1400, height: 1400, alignment: .center)
                 .position(x: 0, y: 600)
             
             Image("Logo_App")
