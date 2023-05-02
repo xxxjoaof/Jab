@@ -191,6 +191,18 @@ struct GameAnimalView: View {
             url = Bundle.main.url(forResource: "cat", withExtension: "mp3")
         case 3:
             url = Bundle.main.url(forResource: "jacaré", withExtension: "mp3")
+        case 4:
+            url = Bundle.main.url(forResource: "lion", withExtension: "mp3")
+        case 5:
+            url = Bundle.main.url(forResource: "monkey", withExtension: "mp3")
+        case 6:
+            url = Bundle.main.url(forResource: "onça", withExtension: "mp3")
+        case 7:
+            url = Bundle.main.url(forResource: "tucano", withExtension: "mp3")
+        case 8:
+            url = Bundle.main.url(forResource: "vaca", withExtension: "mp3")
+        case 9:
+            url = Bundle.main.url(forResource: "zebra", withExtension: "mp3")
         // adicione os outros casos para as outras imagens
         default:
             url = nil

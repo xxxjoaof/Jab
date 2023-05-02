@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81908E8F29FB50EC00D730C4 /* jabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81908E8E29FB50EC00D730C4 /* jabApp.swift */; };
+		817474F52A0096330044F934 /* vaca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474EF2A0096320044F934 /* vaca.mp3 */; };
+		817474F62A0096330044F934 /* lion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474F02A0096320044F934 /* lion.mp3 */; };
+		817474F72A0096330044F934 /* tucano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474F12A0096330044F934 /* tucano.mp3 */; };
+		817474F82A0096330044F934 /* onça.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474F22A0096330044F934 /* onça.mp3 */; };
+		817474F92A0096330044F934 /* monkey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474F32A0096330044F934 /* monkey.mp3 */; };
+		817474FA2A0096330044F934 /* zebra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474F42A0096330044F934 /* zebra.mp3 */; };
+		817474FE2A009CD10044F934 /* jabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817474FD2A009CD10044F934 /* jabApp.swift */; };
 		81908E9129FB50EC00D730C4 /* CongratulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81908E9029FB50EC00D730C4 /* CongratulationView.swift */; };
 		81908E9329FB50ED00D730C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81908E9229FB50ED00D730C4 /* Assets.xcassets */; };
 		81908E9629FB50ED00D730C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81908E9529FB50ED00D730C4 /* Preview Assets.xcassets */; };
@@ -19,8 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		817474EF2A0096320044F934 /* vaca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vaca.mp3; sourceTree = "<group>"; };
+		817474F02A0096320044F934 /* lion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lion.mp3; sourceTree = "<group>"; };
+		817474F12A0096330044F934 /* tucano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tucano.mp3; sourceTree = "<group>"; };
+		817474F22A0096330044F934 /* onça.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "onça.mp3"; sourceTree = "<group>"; };
+		817474F32A0096330044F934 /* monkey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = monkey.mp3; sourceTree = "<group>"; };
+		817474F42A0096330044F934 /* zebra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zebra.mp3; sourceTree = "<group>"; };
+		817474FD2A009CD10044F934 /* jabApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jabApp.swift; sourceTree = "<group>"; };
 		81908E8B29FB50EC00D730C4 /* jab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jab.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		81908E8E29FB50EC00D730C4 /* jabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jabApp.swift; sourceTree = "<group>"; };
 		81908E9029FB50EC00D730C4 /* CongratulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationView.swift; sourceTree = "<group>"; };
 		81908E9229FB50ED00D730C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81908E9529FB50ED00D730C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -62,8 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				81F5D47929FEDEB4002BE8E0 /* SoundAnimals */,
-				81908E8E29FB50EC00D730C4 /* jabApp.swift */,
 				81908E9029FB50EC00D730C4 /* CongratulationView.swift */,
+				817474FD2A009CD10044F934 /* jabApp.swift */,
 				81F5D47729FECCDA002BE8E0 /* GameAnimalView.swift */,
 				81908E9229FB50ED00D730C4 /* Assets.xcassets */,
 				81908E9429FB50ED00D730C4 /* Preview Content */,
@@ -83,6 +95,12 @@
 			isa = PBXGroup;
 			children = (
 				81F5D48229FEF0E7002BE8E0 /* jacaré.mp3 */,
+				817474F02A0096320044F934 /* lion.mp3 */,
+				817474F32A0096330044F934 /* monkey.mp3 */,
+				817474F22A0096330044F934 /* onça.mp3 */,
+				817474F12A0096330044F934 /* tucano.mp3 */,
+				817474EF2A0096320044F934 /* vaca.mp3 */,
+				817474F42A0096330044F934 /* zebra.mp3 */,
 				81F5D48029FEF02C002BE8E0 /* cat.mp3 */,
 				81F5D47E29FEEF7C002BE8E0 /* elephant.mp3 */,
 				81F5D47C29FEDF63002BE8E0 /* dog.mp3 */,
@@ -148,12 +166,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817474F62A0096330044F934 /* lion.mp3 in Resources */,
 				81F5D48129FEF02C002BE8E0 /* cat.mp3 in Resources */,
 				81F5D47D29FEDF63002BE8E0 /* dog.mp3 in Resources */,
+				817474F82A0096330044F934 /* onça.mp3 in Resources */,
 				81F5D48329FEF0E7002BE8E0 /* jacaré.mp3 in Resources */,
+				817474F92A0096330044F934 /* monkey.mp3 in Resources */,
+				817474F72A0096330044F934 /* tucano.mp3 in Resources */,
+				817474FA2A0096330044F934 /* zebra.mp3 in Resources */,
 				81908E9629FB50ED00D730C4 /* Preview Assets.xcassets in Resources */,
 				81908E9329FB50ED00D730C4 /* Assets.xcassets in Resources */,
 				81F5D47F29FEEF7C002BE8E0 /* elephant.mp3 in Resources */,
+				817474F52A0096330044F934 /* vaca.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,8 +189,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				81908E9129FB50EC00D730C4 /* CongratulationView.swift in Sources */,
-				81908E8F29FB50EC00D730C4 /* jabApp.swift in Sources */,
 				81F5D47829FECCDA002BE8E0 /* GameAnimalView.swift in Sources */,
+				817474FE2A009CD10044F934 /* jabApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
