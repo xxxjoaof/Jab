@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CongratulationView: View {
+struct ContentView: View {
     var body: some View {
        
         ZStack{
@@ -96,8 +96,8 @@ struct CongratulationView: View {
     }
 }
 
-struct CongratulationView_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        CongratulationView()
+        ContentView()
     }
 }
