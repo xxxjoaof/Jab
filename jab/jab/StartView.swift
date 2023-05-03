@@ -9,22 +9,22 @@ import SwiftUI
 
 struct LoadingView: View {
     var body: some View {
-            ZStack{
-                Color("#F1F5F4")
-                    .ignoresSafeArea()
+        ZStack{
+            Color("#F1F5F4")
+                .ignoresSafeArea()
+            
+            VStack{
+                //Logo Inicial do aplicativo
+                Image("LogoStart")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
                 
-                VStack{
-                    //Logo Inicial do aplicativo
-                    Image("LogoStart")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 200, height: 200)
-                    
-                    ProgressView()
-                    //Função do Loading para ir para a a tela de usuário (Estudar como fazer isso)
-                    
-                }
+                ProgressView()
+                //Função do Loading para ir para a a tela de usuário (Estudar como fazer isso)
+                
             }
+        }
     }
 }
 
@@ -58,5 +58,10 @@ struct ContentView: View {
                 }
             }
         }
+    }
+}
+struct ContentView_Preview: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
