@@ -14,7 +14,7 @@ struct GameAnimalView: View {
     
     @State var imagensAnimais : Image? = Image("cachorro")
     @State var contador = 0
-    var question: Question
+    @State var question: Question
     @State var questionList = database
     @State var success = false
     @State var selectedAnswer: String? = nil // added
@@ -113,6 +113,8 @@ struct GameAnimalView: View {
                                     contador = 9
                                 }
 
+                                question = questionList[contador]
+                                
                                 // atualiza a imagem para a próxima pergunta
                                 if contador == 0 {
                                     self.imagensAnimais = Image("cachorro")
