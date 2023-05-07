@@ -1,21 +1,21 @@
 //
-//  GameAnimalView.swift
+//  FruitView.swift
 //  jab
 //
-//  Created by João Pedro França on 30/04/23.
+//  Created by João Pedro França on 07/05/23.
 //
 
 import SwiftUI
 import AVFoundation
 
-var playerAnimal: AVAudioPlayer!
+var playerFruit: AVAudioPlayer!
 
-struct GameAnimalView: View {
-    
-    @State var imagensAnimais : Image? = Image("cachorro")
+struct FruitView: View {
+
+    @State var imagensAnimais : Image? = Image("abacaxi")
     @State var contador = 0
     @State var question: Question
-    @State var questionList = database3
+    @State var questionList = database4
     @State var success = false
     @State var selectedAnswer: String? = nil
     @State var numCorrectAnswer: Int = 0
@@ -117,25 +117,25 @@ struct GameAnimalView: View {
                             
                             // atualiza a imagem para a próxima pergunta
                             if contador == 0 {
-                                self.imagensAnimais = Image("cachorro")
+                                self.imagensAnimais = Image("abacaxi")
                             } else if contador == 1 {
-                                self.imagensAnimais = Image("elefante")
+                                self.imagensAnimais = Image("banana")
                             } else if contador == 2 {
-                                self.imagensAnimais = Image("gato")
+                                self.imagensAnimais = Image("kiwi")
                             } else if contador == 3 {
-                                self.imagensAnimais = Image("jacaré")
+                                self.imagensAnimais = Image("laranja")
                             } else if contador == 4 {
-                                self.imagensAnimais = Image("leao")
+                                self.imagensAnimais = Image("maça")
                             } else if contador == 5 {
-                                self.imagensAnimais = Image("macaco")
+                                self.imagensAnimais = Image("manga")
                             } else if contador == 6 {
-                                self.imagensAnimais = Image("onça")
+                                self.imagensAnimais = Image("melancia")
                             } else if contador == 7 {
-                                self.imagensAnimais = Image("tucano")
+                                self.imagensAnimais = Image("morango")
                             } else if contador == 8 {
-                                self.imagensAnimais = Image("vaca")
+                                self.imagensAnimais = Image("pera")
                             } else if contador == 9 {
-                                self.imagensAnimais = Image("zebra")
+                                self.imagensAnimais = Image("uva")
                             } else if contador == 10 {
                                 navigationPath.append("congratulation_view")
                             }
@@ -152,7 +152,7 @@ struct GameAnimalView: View {
                 }
             }
             .navigationDestination(for: String.self) { score in
-                CongratulationView(score: numCorrectAnswer)
+                FruitView(score: numCorrectAnswer)
             }
         }
     }
@@ -190,6 +190,7 @@ struct GameAnimalView: View {
             url = Bundle.main.url(forResource: "vaca", withExtension: "mp3")
         case 9:
             url = Bundle.main.url(forResource: "zebra", withExtension: "mp3")
+            // adicione os outros casos para as outras imagens
         default:
             url = nil
         }
@@ -199,18 +200,20 @@ struct GameAnimalView: View {
         }
         
         do {
-            playerAnimal = try AVAudioPlayer(contentsOf: url!)
-            playerAnimal?.play()
+            playerFruit = try AVAudioPlayer(contentsOf: url!)
+            playerFruit?.play()
         } catch {
             print("error")
         }
     }
+    
 }
 
-struct GameAnimalView_Previews: PreviewProvider {
+
+struct FruitView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack{
-            GameAnimalView(question:database3.first!)
+            FruitView(question:database4.first!)
         }
     }
 }

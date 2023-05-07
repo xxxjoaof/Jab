@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct CongratulationView: View {
-        
+    
+    @State var score: Int
+    
     var body: some View {
         ZStack{
             //Cor de fundo geral
@@ -70,7 +72,7 @@ struct CongratulationView: View {
 
                         
                         
-                        Text("0")
+                        Text(String(score))
                             .foregroundColor(Color.black)
                             .font(.system(size: 25, weight: .semibold, design: .default))
                     }
@@ -105,6 +107,6 @@ struct CongratulationView: View {
 
 struct CongratulationView_Previews: PreviewProvider {
     static var previews: some View {
-        CongratulationView()
+        CongratulationView(score: 0)
     }
 }
