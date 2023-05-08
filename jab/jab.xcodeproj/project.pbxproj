@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69A18B702A07278900BF33D7 /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A18B6F2A07278900BF33D7 /* Datasource.swift */; };
 		69A18B762A072F8D00BF33D7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A18B752A072F8D00BF33D7 /* LoginView.swift */; };
 		81908E8F29FB50EC00D730C4 /* jabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81908E8E29FB50EC00D730C4 /* jabApp.swift */; };
 		81908E9129FB50EC00D730C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81908E9029FB50EC00D730C4 /* ContentView.swift */; };
@@ -16,7 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		69A18B6F2A07278900BF33D7 /* Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
 		69A18B752A072F8D00BF33D7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		81908E8B29FB50EC00D730C4 /* jab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81908E8E29FB50EC00D730C4 /* jabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jabApp.swift; sourceTree = "<group>"; };
@@ -36,14 +34,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		69A18B6E2A07274100BF33D7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				69A18B6F2A07278900BF33D7 /* Datasource.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		69A18B722A072F0700BF33D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				69A18B722A072F0700BF33D7 /* View */,
-				69A18B6E2A07274100BF33D7 /* Model */,
 				81908E8E29FB50EC00D730C4 /* jabApp.swift */,
 				81908E9029FB50EC00D730C4 /* ContentView.swift */,
 				81908E9229FB50ED00D730C4 /* Assets.xcassets */,
@@ -160,7 +149,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				81908E9129FB50EC00D730C4 /* ContentView.swift in Sources */,
-				69A18B702A07278900BF33D7 /* Datasource.swift in Sources */,
 				81908E8F29FB50EC00D730C4 /* jabApp.swift in Sources */,
 				69A18B762A072F8D00BF33D7 /* LoginView.swift in Sources */,
 			);
