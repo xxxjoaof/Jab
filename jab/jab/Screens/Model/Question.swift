@@ -48,24 +48,24 @@ let database3 = [
 //MARK: - Banco de dados do jogo de Fruta
 
 let database4 = [
-    Question(imageName: "abacaxi", prompt: "Que fruta é esse?", answer: "Abacaxi", wrongAnswers: ["Elefante","Zebra","Macaco"]),
+    Question(imageName: "abacaxi", prompt: "Que fruta é esse?", answer: "Abacaxi", wrongAnswers: ["Banana","Maça","Manga"]),
     
-    Question(imageName: "banana", prompt: "Que fruta é esse?", answer: "Banana", wrongAnswers: ["Leão","Jacaré","Tucano"]),
+    Question(imageName: "banana", prompt: "Que fruta é esse?", answer: "Banana", wrongAnswers: ["Pera","Maça","Manga"]),
     
-    Question(imageName: "kiwi", prompt: "Que fruta é esse?", answer: "Kiwi", wrongAnswers: ["Jacaré","Elefante","Leão"]),
+    Question(imageName: "kiwi", prompt: "Que fruta é esse?", answer: "Kiwi", wrongAnswers: ["Uva","Morango","Laranja"]),
     
-    Question(imageName: "laranja", prompt: "Que fruta é esse?", answer: "Laranja", wrongAnswers: ["Vaca","Zebra","Gato"]),
+    Question(imageName: "laranja", prompt: "Que fruta é esse?", answer: "Laranja", wrongAnswers: ["Uva","Melancia","Banana"]),
     
-    Question(imageName: "maça", prompt: "Que fruta é esse?", answer: "Maça", wrongAnswers: ["Elefante","Zebra","Macaco"]),
+    Question(imageName: "maça", prompt: "Que fruta é esse?", answer: "Maça", wrongAnswers: ["Manga","Kiwi","Melancia"]),
     
-    Question(imageName: "manga", prompt: "Que fruta é esse?", answer: "Manga", wrongAnswers: ["Elefante","Zebra","Vaca"]),
+    Question(imageName: "manga", prompt: "Que fruta é esse?", answer: "Manga", wrongAnswers: ["Abacaxi","Pera","Banana"]),
     
-    Question(imageName: "melancia", prompt: "Que fruta é esse?", answer: "Melancia", wrongAnswers: ["Macaco","Zebra","Leão"]),
+    Question(imageName: "melancia", prompt: "Que fruta é esse?", answer: "Melancia", wrongAnswers: ["Laranja","Morango","Pera"]),
     
-    Question(imageName: "morango", prompt: "Que fruta é esse?", answer: "Morango", wrongAnswers: ["Gato","Zebra","Macaco"]),
+    Question(imageName: "morango", prompt: "Que fruta é esse?", answer: "Morango", wrongAnswers: ["Manga","Pera","Maça"]),
     
-    Question(imageName: "pera", prompt: "Que fruta é esse?", answer: "Pera", wrongAnswers: ["Elefante","Zebra","Macaco"]),
+    Question(imageName: "pera", prompt: "Que fruta é esse?", answer: "Pera", wrongAnswers: ["Kiwi","Laranja","Uva"]),
     
-    Question(imageName: "uva", prompt: "Que fruta é esse?", answer: "Uva", wrongAnswers: ["Gato","Tucano","Jacaré"]),
+    Question(imageName: "uva", prompt: "Que fruta é esse?", answer: "Uva", wrongAnswers: ["Kiwi","Pera","Morango"]),
 ]
 
