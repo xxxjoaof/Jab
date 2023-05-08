@@ -32,6 +32,14 @@ struct LoginView: View {
                 EmailTextField(email: $email)
                 PasswordSecureField(password: $password)
                 
+                //Button for forgot the password
+                Button {
+                    print("Clicou no esqueceu a senha.")
+                } label: {
+                    ForgotPasswordField()
+                }
+
+                
                 if authFail {
                     Text("E-mail/Senha incorreto!")
                         .font(.headline)
@@ -57,6 +65,15 @@ struct LoginView: View {
                 }
   
                 Spacer()
+                
+                Button {
+                    print("Clicou em esqueceu a senha.")
+                } label: {
+                    
+                    RegisterAccountField()
+                }
+                
+                
             }
             .padding()
             
@@ -133,5 +150,32 @@ struct PasswordSecureField: View {
             .foregroundColor(.gray)
             .frame(width: 300, height: 40)
             .cornerRadius(35)
+    }
+}
+
+//MARK: - ForgotPasswordField
+struct ForgotPasswordField: View {
+    
+    var body: some View {
+        Text("Esqueceu a senha?")
+            .foregroundColor(Color.gray)
+            .font(.system(size: 15, weight: .semibold, design: .default))
+            .padding(EdgeInsets(top: 0, leading: 180, bottom: 0, trailing: 40))
+    }
+}
+
+//MARK: - RegisterAccountField
+struct RegisterAccountField: View {
+    
+    var body: some View {
+        
+        VStack{
+            Divider()
+                .frame(width: 500, height: 20)
+            Text("Não tenho uma conta. Toque aqui para criar uma agora.")
+                .foregroundColor(Color.gray)
+                .font(.system(size: 13, weight:.medium, design: .default))
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+        }
     }
 }
