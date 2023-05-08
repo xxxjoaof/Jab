@@ -101,7 +101,7 @@ struct FruitView: View {
                                         .foregroundColor(Color.black)
                                 }
                             }
-                            .disabled(selectedAnswer != nil) // disable buttons after an answer has been selected
+                            .disabled(selectedAnswer != nil)
                         }
                         
                     }
@@ -152,7 +152,7 @@ struct FruitView: View {
                 }
             }
             .navigationDestination(for: String.self) { score in
-                FruitView(score: numCorrectAnswer)
+                CongratulationView(score: numCorrectAnswer)
             }
         }
     }
