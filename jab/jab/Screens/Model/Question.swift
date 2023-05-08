@@ -17,7 +17,7 @@ struct Question: Identifiable{
     func allAnswers () -> [String] {
         var options = wrongAnswers
         options.append(answer)
-        return options
+        return options.shuffled()
     }
 }
 
