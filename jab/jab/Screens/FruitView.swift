@@ -45,7 +45,7 @@ struct FruitView: View {
                 
                 Capsule()
                     .frame(width: 700, height: 700)
-                    .foregroundColor(Color("#FF0000"))
+                    .foregroundColor(Color("#37B5FE"))
                     .offset(x: 0, y: 450)
                 
                 Spacer()

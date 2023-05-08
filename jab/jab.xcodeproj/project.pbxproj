@@ -15,8 +15,10 @@
 		815C87E32A09A7F7005C331F /* pentagono.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87DA2A09A7F7005C331F /* pentagono.mp3 */; };
 		815C87E42A09A7F7005C331F /* losango.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87DB2A09A7F7005C331F /* losango.mp3 */; };
 		815C87E52A09A7F7005C331F /* hexagono.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87DC2A09A7F7005C331F /* hexagono.mp3 */; };
-		815C87E62A09A7F7005C331F /* esfera.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87DD2A09A7F7005C331F /* esfera.mp3 */; };
 		815C87E72A09A7F7005C331F /* trapezio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87DE2A09A7F7005C331F /* trapezio.mp3 */; };
+		815C87E92A09B3E6005C331F /* esfera.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87E82A09B3E6005C331F /* esfera.mp3 */; };
+		815C87EB2A09B7A7005C331F /* AccountRegisterField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815C87EA2A09B7A7005C331F /* AccountRegisterField.swift */; };
+		815C87ED2A09B85C005C331F /* StartAppField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815C87EC2A09B85C005C331F /* StartAppField.swift */; };
 		817474F52A0096330044F934 /* vaca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474EF2A0096320044F934 /* vaca.mp3 */; };
 		817474F62A0096330044F934 /* lion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474F02A0096320044F934 /* lion.mp3 */; };
 		817474F72A0096330044F934 /* tucano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474F12A0096330044F934 /* tucano.mp3 */; };
@@ -55,8 +57,10 @@
 		815C87DA2A09A7F7005C331F /* pentagono.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pentagono.mp3; sourceTree = "<group>"; };
 		815C87DB2A09A7F7005C331F /* losango.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = losango.mp3; sourceTree = "<group>"; };
 		815C87DC2A09A7F7005C331F /* hexagono.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hexagono.mp3; sourceTree = "<group>"; };
-		815C87DD2A09A7F7005C331F /* esfera.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = esfera.mp3; sourceTree = "<group>"; };
 		815C87DE2A09A7F7005C331F /* trapezio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trapezio.mp3; sourceTree = "<group>"; };
+		815C87E82A09B3E6005C331F /* esfera.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = esfera.mp3; path = ../../../../../../Downloads/esfera.mp3; sourceTree = "<group>"; };
+		815C87EA2A09B7A7005C331F /* AccountRegisterField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegisterField.swift; sourceTree = "<group>"; };
+		815C87EC2A09B85C005C331F /* StartAppField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAppField.swift; sourceTree = "<group>"; };
 		817474EF2A0096320044F934 /* vaca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vaca.mp3; sourceTree = "<group>"; };
 		817474F02A0096320044F934 /* lion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lion.mp3; sourceTree = "<group>"; };
 		817474F12A0096330044F934 /* tucano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tucano.mp3; sourceTree = "<group>"; };
@@ -101,9 +105,9 @@
 		815C87D52A09A7D4005C331F /* SoundGeometric */ = {
 			isa = PBXGroup;
 			children = (
-				815C87DD2A09A7F7005C331F /* esfera.mp3 */,
 				815C87DC2A09A7F7005C331F /* hexagono.mp3 */,
 				815C87DB2A09A7F7005C331F /* losango.mp3 */,
+				815C87E82A09B3E6005C331F /* esfera.mp3 */,
 				815C87D82A09A7F7005C331F /* oval.mp3 */,
 				815C87DA2A09A7F7005C331F /* pentagono.mp3 */,
 				815C87D62A09A7F7005C331F /* quadrado.mp3 */,
@@ -155,6 +159,8 @@
 		81D077E22A06DB2F00D8880A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				815C87EC2A09B85C005C331F /* StartAppField.swift */,
+				815C87EA2A09B7A7005C331F /* AccountRegisterField.swift */,
 				81908E9029FB50EC00D730C4 /* CongratulationView.swift */,
 				81F5D47729FECCDA002BE8E0 /* GameAnimalView.swift */,
 				81D078022A082EF400D8880A /* FruitView.swift */,
@@ -270,7 +276,6 @@
 				81D078142A094E1800D8880A /* pera.mp3 in Resources */,
 				81D078102A094E1800D8880A /* abacaxi.mp3 in Resources */,
 				81F5D47D29FEDF63002BE8E0 /* dog.mp3 in Resources */,
-				815C87E62A09A7F7005C331F /* esfera.mp3 in Resources */,
 				815C87E72A09A7F7005C331F /* trapezio.mp3 in Resources */,
 				81D078162A094E1800D8880A /* kiwi.mp3 in Resources */,
 				815C87E22A09A7F7005C331F /* retangulo.mp3 in Resources */,
@@ -294,6 +299,7 @@
 				81D0780F2A094E1800D8880A /* manga.mp3 in Resources */,
 				815C87E12A09A7F7005C331F /* oval.mp3 in Resources */,
 				81F5D47F29FEEF7C002BE8E0 /* elephant.mp3 in Resources */,
+				815C87E92A09B3E6005C331F /* esfera.mp3 in Resources */,
 				817474F52A0096330044F934 /* vaca.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +311,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815C87EB2A09B7A7005C331F /* AccountRegisterField.swift in Sources */,
+				815C87ED2A09B85C005C331F /* StartAppField.swift in Sources */,
 				81908E9129FB50EC00D730C4 /* CongratulationView.swift in Sources */,
 				81D077E52A06DECA00D8880A /* Question.swift in Sources */,
 				815C87D42A09A2C4005C331F /* GeometricView.swift in Sources */,
