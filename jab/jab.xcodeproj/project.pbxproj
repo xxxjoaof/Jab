@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		815C87D42A09A2C4005C331F /* GeometricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815C87D32A09A2C4005C331F /* GeometricView.swift */; };
+		815C87DF2A09A7F7005C331F /* quadrado.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87D62A09A7F7005C331F /* quadrado.mp3 */; };
+		815C87E02A09A7F7005C331F /* triangulo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87D72A09A7F7005C331F /* triangulo.mp3 */; };
+		815C87E12A09A7F7005C331F /* oval.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87D82A09A7F7005C331F /* oval.mp3 */; };
+		815C87E22A09A7F7005C331F /* retangulo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87D92A09A7F7005C331F /* retangulo.mp3 */; };
+		815C87E32A09A7F7005C331F /* pentagono.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87DA2A09A7F7005C331F /* pentagono.mp3 */; };
+		815C87E42A09A7F7005C331F /* losango.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87DB2A09A7F7005C331F /* losango.mp3 */; };
+		815C87E52A09A7F7005C331F /* hexagono.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87DC2A09A7F7005C331F /* hexagono.mp3 */; };
+		815C87E62A09A7F7005C331F /* esfera.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87DD2A09A7F7005C331F /* esfera.mp3 */; };
+		815C87E72A09A7F7005C331F /* trapezio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87DE2A09A7F7005C331F /* trapezio.mp3 */; };
 		817474F52A0096330044F934 /* vaca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474EF2A0096320044F934 /* vaca.mp3 */; };
 		817474F62A0096330044F934 /* lion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474F02A0096320044F934 /* lion.mp3 */; };
 		817474F72A0096330044F934 /* tucano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474F12A0096330044F934 /* tucano.mp3 */; };
@@ -37,6 +47,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		815C87D32A09A2C4005C331F /* GeometricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricView.swift; sourceTree = "<group>"; };
+		815C87D62A09A7F7005C331F /* quadrado.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quadrado.mp3; sourceTree = "<group>"; };
+		815C87D72A09A7F7005C331F /* triangulo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = triangulo.mp3; sourceTree = "<group>"; };
+		815C87D82A09A7F7005C331F /* oval.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oval.mp3; sourceTree = "<group>"; };
+		815C87D92A09A7F7005C331F /* retangulo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retangulo.mp3; sourceTree = "<group>"; };
+		815C87DA2A09A7F7005C331F /* pentagono.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pentagono.mp3; sourceTree = "<group>"; };
+		815C87DB2A09A7F7005C331F /* losango.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = losango.mp3; sourceTree = "<group>"; };
+		815C87DC2A09A7F7005C331F /* hexagono.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hexagono.mp3; sourceTree = "<group>"; };
+		815C87DD2A09A7F7005C331F /* esfera.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = esfera.mp3; sourceTree = "<group>"; };
+		815C87DE2A09A7F7005C331F /* trapezio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trapezio.mp3; sourceTree = "<group>"; };
 		817474EF2A0096320044F934 /* vaca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vaca.mp3; sourceTree = "<group>"; };
 		817474F02A0096320044F934 /* lion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lion.mp3; sourceTree = "<group>"; };
 		817474F12A0096330044F934 /* tucano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tucano.mp3; sourceTree = "<group>"; };
@@ -78,6 +98,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		815C87D52A09A7D4005C331F /* SoundGeometric */ = {
+			isa = PBXGroup;
+			children = (
+				815C87DD2A09A7F7005C331F /* esfera.mp3 */,
+				815C87DC2A09A7F7005C331F /* hexagono.mp3 */,
+				815C87DB2A09A7F7005C331F /* losango.mp3 */,
+				815C87D82A09A7F7005C331F /* oval.mp3 */,
+				815C87DA2A09A7F7005C331F /* pentagono.mp3 */,
+				815C87D62A09A7F7005C331F /* quadrado.mp3 */,
+				815C87D92A09A7F7005C331F /* retangulo.mp3 */,
+				815C87DE2A09A7F7005C331F /* trapezio.mp3 */,
+				815C87D72A09A7F7005C331F /* triangulo.mp3 */,
+			);
+			path = SoundGeometric;
+			sourceTree = "<group>";
+		};
 		81908E8229FB50EC00D730C4 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +133,7 @@
 		81908E8D29FB50EC00D730C4 /* jab */ = {
 			isa = PBXGroup;
 			children = (
+				815C87D52A09A7D4005C331F /* SoundGeometric */,
 				81D078042A092AA800D8880A /* SoundFruit */,
 				81D077E02A06DAE900D8880A /* app.swift */,
 				81D077E22A06DB2F00D8880A /* Screens */,
@@ -121,6 +158,7 @@
 				81908E9029FB50EC00D730C4 /* CongratulationView.swift */,
 				81F5D47729FECCDA002BE8E0 /* GameAnimalView.swift */,
 				81D078022A082EF400D8880A /* FruitView.swift */,
+				815C87D32A09A2C4005C331F /* GeometricView.swift */,
 				81D077E32A06DB4F00D8880A /* Model */,
 			);
 			path = Screens;
@@ -232,10 +270,14 @@
 				81D078142A094E1800D8880A /* pera.mp3 in Resources */,
 				81D078102A094E1800D8880A /* abacaxi.mp3 in Resources */,
 				81F5D47D29FEDF63002BE8E0 /* dog.mp3 in Resources */,
+				815C87E62A09A7F7005C331F /* esfera.mp3 in Resources */,
+				815C87E72A09A7F7005C331F /* trapezio.mp3 in Resources */,
 				81D078162A094E1800D8880A /* kiwi.mp3 in Resources */,
+				815C87E22A09A7F7005C331F /* retangulo.mp3 in Resources */,
 				81D078122A094E1800D8880A /* melancia.mp3 in Resources */,
 				817474F82A0096330044F934 /* onça.mp3 in Resources */,
 				81F5D48329FEF0E7002BE8E0 /* jacaré.mp3 in Resources */,
+				815C87E32A09A7F7005C331F /* pentagono.mp3 in Resources */,
 				817474F92A0096330044F934 /* monkey.mp3 in Resources */,
 				817474F72A0096330044F934 /* tucano.mp3 in Resources */,
 				81D078112A094E1800D8880A /* laranja.mp3 in Resources */,
@@ -243,9 +285,14 @@
 				81908E9629FB50ED00D730C4 /* Preview Assets.xcassets in Resources */,
 				81D078182A094E1800D8880A /* uva.mp3 in Resources */,
 				81908E9329FB50ED00D730C4 /* Assets.xcassets in Resources */,
+				815C87E52A09A7F7005C331F /* hexagono.mp3 in Resources */,
+				815C87DF2A09A7F7005C331F /* quadrado.mp3 in Resources */,
+				815C87E42A09A7F7005C331F /* losango.mp3 in Resources */,
 				81D078132A094E1800D8880A /* morango.mp3 in Resources */,
+				815C87E02A09A7F7005C331F /* triangulo.mp3 in Resources */,
 				81D078172A094E1800D8880A /* banana.mp3 in Resources */,
 				81D0780F2A094E1800D8880A /* manga.mp3 in Resources */,
+				815C87E12A09A7F7005C331F /* oval.mp3 in Resources */,
 				81F5D47F29FEEF7C002BE8E0 /* elephant.mp3 in Resources */,
 				817474F52A0096330044F934 /* vaca.mp3 in Resources */,
 			);
@@ -260,6 +307,7 @@
 			files = (
 				81908E9129FB50EC00D730C4 /* CongratulationView.swift in Sources */,
 				81D077E52A06DECA00D8880A /* Question.swift in Sources */,
+				815C87D42A09A2C4005C331F /* GeometricView.swift in Sources */,
 				81F5D47829FECCDA002BE8E0 /* GameAnimalView.swift in Sources */,
 				81D078032A082EF400D8880A /* FruitView.swift in Sources */,
 				81D077E12A06DAE900D8880A /* app.swift in Sources */,

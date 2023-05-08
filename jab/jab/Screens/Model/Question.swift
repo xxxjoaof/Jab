@@ -21,6 +21,30 @@ struct Question: Identifiable{
     }
 }
 
+
+
+//MARK: - Banco de dados do jogo de Animais
+
+let database1 = [
+    Question(imageName: "esfera", prompt: "Que geometria é essa?", answer: "Esfera", wrongAnswers: ["Pentágono","Quadrado","Triângulo"]),
+    
+    Question(imageName: "hexagono", prompt: "Que geometria é essa?", answer: "Hexágono", wrongAnswers: ["Losango","Retângulo","Quadrado"]),
+    
+    Question(imageName: "losango", prompt: "Que geometria é essa?", answer: "Losango", wrongAnswers: ["Pentágono","Oval","Retângulo"]),
+    
+    Question(imageName: "oval", prompt: "Que geometria é essa?", answer: "Oval", wrongAnswers: ["Retângulo","Trapézio","Hexágono"]),
+    
+    Question(imageName: "pentagono", prompt: "Que geometria é essa?", answer: "Pentágono", wrongAnswers: ["Quadrado","Retângulo","Trapézio"]),
+    
+    Question(imageName: "quadrado", prompt: "Que geometria é essa?", answer: "Quadrado", wrongAnswers: ["Esfera","Hexágono","Losango"]),
+    
+    Question(imageName: "retangulo", prompt: "Que geometria é essa?", answer: "Retângulo", wrongAnswers: ["Trapézio","Quadrado","Oval"]),
+    
+    Question(imageName: "trapezio", prompt: "Que geometria é essa?", answer: "Trapézio", wrongAnswers: ["Retângulo","Zebra","Quadrado"]),
+    
+    Question(imageName: "triangulo", prompt: "Que geometria é essa?", answer: "Triângulo", wrongAnswers: ["Retângulo","Pentágono","Oval"]),
+]
+
 //MARK: - Banco de dados do jogo de Animais
 
 let database3 = [
