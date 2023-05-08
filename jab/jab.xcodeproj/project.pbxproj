@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69A18B762A072F8D00BF33D7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A18B752A072F8D00BF33D7 /* LoginView.swift */; };
 		81908E8F29FB50EC00D730C4 /* jabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81908E8E29FB50EC00D730C4 /* jabApp.swift */; };
 		81908E9129FB50EC00D730C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81908E9029FB50EC00D730C4 /* ContentView.swift */; };
 		81908E9329FB50ED00D730C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81908E9229FB50ED00D730C4 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69A18B752A072F8D00BF33D7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		81908E8B29FB50EC00D730C4 /* jab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81908E8E29FB50EC00D730C4 /* jabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jabApp.swift; sourceTree = "<group>"; };
 		81908E9029FB50EC00D730C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69A18B722A072F0700BF33D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69A18B752A072F8D00BF33D7 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		81908E8229FB50EC00D730C4 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +61,7 @@
 		81908E8D29FB50EC00D730C4 /* jab */ = {
 			isa = PBXGroup;
 			children = (
+				69A18B722A072F0700BF33D7 /* View */,
 				81908E8E29FB50EC00D730C4 /* jabApp.swift */,
 				81908E9029FB50EC00D730C4 /* ContentView.swift */,
 				81908E9229FB50ED00D730C4 /* Assets.xcassets */,
@@ -139,6 +150,7 @@
 			files = (
 				81908E9129FB50EC00D730C4 /* ContentView.swift in Sources */,
 				81908E8F29FB50EC00D730C4 /* jabApp.swift in Sources */,
+				69A18B762A072F8D00BF33D7 /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
