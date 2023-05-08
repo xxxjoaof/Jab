@@ -171,25 +171,25 @@ struct FruitView: View {
         var url: URL?
         switch contador {
         case 0:
-            url = Bundle.main.url(forResource: "dog", withExtension: "mp3")
+            url = Bundle.main.url(forResource: "abacaxi", withExtension: "mp3")
         case 1:
-            url = Bundle.main.url(forResource: "elephant", withExtension: "mp3")
+            url = Bundle.main.url(forResource: "banana", withExtension: "mp3")
         case 2:
-            url = Bundle.main.url(forResource: "cat", withExtension: "mp3")
+            url = Bundle.main.url(forResource: "kiwi", withExtension: "mp3")
         case 3:
-            url = Bundle.main.url(forResource: "jacaré", withExtension: "mp3")
+            url = Bundle.main.url(forResource: "laranja", withExtension: "mp3")
         case 4:
-            url = Bundle.main.url(forResource: "lion", withExtension: "mp3")
+            url = Bundle.main.url(forResource: "maça", withExtension: "mp3")
         case 5:
-            url = Bundle.main.url(forResource: "monkey", withExtension: "mp3")
+            url = Bundle.main.url(forResource: "manga", withExtension: "mp3")
         case 6:
-            url = Bundle.main.url(forResource: "onça", withExtension: "mp3")
+            url = Bundle.main.url(forResource: "melancia", withExtension: "mp3")
         case 7:
-            url = Bundle.main.url(forResource: "tucano", withExtension: "mp3")
+            url = Bundle.main.url(forResource: "morango", withExtension: "mp3")
         case 8:
-            url = Bundle.main.url(forResource: "vaca", withExtension: "mp3")
+            url = Bundle.main.url(forResource: "pera", withExtension: "mp3")
         case 9:
-            url = Bundle.main.url(forResource: "zebra", withExtension: "mp3")
+            url = Bundle.main.url(forResource: "uva", withExtension: "mp3")
             // adicione os outros casos para as outras imagens
         default:
             url = nil
