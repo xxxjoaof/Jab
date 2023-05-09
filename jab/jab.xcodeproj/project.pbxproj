@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81517D7E2A09E24400AD3879 /* GameViewField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81517D7D2A09E24400AD3879 /* GameViewField.swift */; };
+		81517D822A09E47D00AD3879 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81517D802A09E47D00AD3879 /* Login.swift */; };
+		81517D832A09E47D00AD3879 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81517D812A09E47D00AD3879 /* LoginView.swift */; };
 		815C87D42A09A2C4005C331F /* GeometricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815C87D32A09A2C4005C331F /* GeometricView.swift */; };
 		815C87DF2A09A7F7005C331F /* quadrado.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87D62A09A7F7005C331F /* quadrado.mp3 */; };
 		815C87E02A09A7F7005C331F /* triangulo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87D72A09A7F7005C331F /* triangulo.mp3 */; };
@@ -49,6 +52,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81517D7D2A09E24400AD3879 /* GameViewField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewField.swift; sourceTree = "<group>"; };
+		81517D802A09E47D00AD3879 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		81517D812A09E47D00AD3879 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		815C87D32A09A2C4005C331F /* GeometricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricView.swift; sourceTree = "<group>"; };
 		815C87D62A09A7F7005C331F /* quadrado.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quadrado.mp3; sourceTree = "<group>"; };
 		815C87D72A09A7F7005C331F /* triangulo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = triangulo.mp3; sourceTree = "<group>"; };
@@ -102,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81517D7F2A09E47D00AD3879 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81517D802A09E47D00AD3879 /* Login.swift */,
+				81517D812A09E47D00AD3879 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		815C87D52A09A7D4005C331F /* SoundGeometric */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +152,7 @@
 		81908E8D29FB50EC00D730C4 /* jab */ = {
 			isa = PBXGroup;
 			children = (
+				81517D7F2A09E47D00AD3879 /* View */,
 				815C87D52A09A7D4005C331F /* SoundGeometric */,
 				81D078042A092AA800D8880A /* SoundFruit */,
 				81D077E02A06DAE900D8880A /* app.swift */,
@@ -165,6 +181,7 @@
 				81F5D47729FECCDA002BE8E0 /* GameAnimalView.swift */,
 				81D078022A082EF400D8880A /* FruitView.swift */,
 				815C87D32A09A2C4005C331F /* GeometricView.swift */,
+				81517D7D2A09E24400AD3879 /* GameViewField.swift */,
 				81D077E32A06DB4F00D8880A /* Model */,
 			);
 			path = Screens;
@@ -312,12 +329,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				815C87EB2A09B7A7005C331F /* AccountRegisterField.swift in Sources */,
+				81517D822A09E47D00AD3879 /* Login.swift in Sources */,
 				815C87ED2A09B85C005C331F /* StartAppField.swift in Sources */,
 				81908E9129FB50EC00D730C4 /* CongratulationView.swift in Sources */,
 				81D077E52A06DECA00D8880A /* Question.swift in Sources */,
 				815C87D42A09A2C4005C331F /* GeometricView.swift in Sources */,
 				81F5D47829FECCDA002BE8E0 /* GameAnimalView.swift in Sources */,
 				81D078032A082EF400D8880A /* FruitView.swift in Sources */,
+				81517D832A09E47D00AD3879 /* LoginView.swift in Sources */,
+				81517D7E2A09E24400AD3879 /* GameViewField.swift in Sources */,
 				81D077E12A06DAE900D8880A /* app.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

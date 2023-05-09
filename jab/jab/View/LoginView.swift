@@ -22,71 +22,72 @@ struct LoginView: View {
     
     
     var body: some View {
-           
-        ZStack{
-            Color(red: 0.946, green: 0.963, blue: 0.955, opacity: 0.865)
-                .ignoresSafeArea()
-                            
-            VStack {
-                LogoImage()
-                EmailTextField(email: $email)
-                PasswordSecureField(password: $password)
+        
+        NavigationStack{
+            ZStack{
+                Color(red: 0.946, green: 0.963, blue: 0.955, opacity: 0.865)
+                    .ignoresSafeArea()
                 
-                //Button for forgot the password
-                Button {
-                    print("Clicou no esqueceu a senha.")
-                } label: {
-                    ForgotPasswordField()
-                }
-
-                
-                if authFail {
-                    Text("E-mail/Senha incorreto!")
-                        .font(.headline)
-                        .offset(y:-10)
-                        .foregroundColor(.red)
-                        .padding(5)
-                }
-                
-                
-                Button(action:{
-                    if self.email == userEmail && self.password == userPassword{
-                        self.authSuces = true
-                        self.authFail = false
-                    }
-                    else{
-                        self.authFail = true
-                        self.authSuces = false
-                    }
-                })
-                {
-                    LoginButton()
-                        
-                }
-  
-                Spacer()
-                
-                Button {
-                    print("Clicou em esqueceu a senha.")
-                } label: {
+                VStack {
+                    LogoImage()
+                    EmailTextField(email: $email)
+                    PasswordSecureField(password: $password)
                     
-                    RegisterAccountField()
+                    //Button for forgot the password
+                    Button {
+                        print("Clicou no esqueceu a senha.")
+                    } label: {
+                        ForgotPasswordField()
+                    }
+                    
+                    
+                    if authFail {
+                        Text("E-mail/Senha incorreto!")
+                            .font(.headline)
+                            .offset(y:-10)
+                            .foregroundColor(.red)
+                            .padding(5)
+                    }
+                    
+                    
+                    Button(action:{
+                        if self.email == userEmail && self.password == userPassword{
+                            self.authSuces = true
+                            self.authFail = false
+                        }
+                        else{
+                            self.authFail = true
+                            self.authSuces = false
+                        }
+                    })
+                    {
+                        LoginButton()
+                        
+                    }
+                    
+                    Spacer()
+                    
+                    Button {
+                        print("Clicou em esqueceu a senha.")
+                    } label: {
+                        
+                        RegisterAccountField()
+                    }
+                    
+                    
                 }
+                .padding()
                 
-                
+                if authSuces {
+                    Text("Sucesso! Trocar pela Navegacao")
+                        .font(.headline)
+                        .frame(width: 200, height: 50, alignment: .center)
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .padding(5)
+                        .cornerRadius(20)
+                }
             }
-            .padding()
-            
-            if authSuces {
-                Text("Sucesso! Trocar pela Navegacao")
-                    .font(.headline)
-                    .frame(width: 200, height: 50, alignment: .center)
-                    .background(Color.green)
-                    .foregroundColor(.white)
-                    .padding(5)
-                    .cornerRadius(20)
-            }
-            
         }
     }
 }
@@ -101,7 +102,7 @@ struct LoginView_Previews: PreviewProvider {
 //MARK: - Logo
 struct LogoImage: View {
     var body: some View {
-        Image("logo")
+        Image("Logo_App")
             .resizable()
             .aspectRatio(contentMode: .fill)
             .frame(width: 200, height: 200, alignment: .center)
@@ -136,6 +137,7 @@ struct EmailTextField: View {
             .foregroundColor(.gray)
             .frame(width: 300, height: 40)
             .cornerRadius(35)
+            .autocapitalization(.none)
     }
 }
 

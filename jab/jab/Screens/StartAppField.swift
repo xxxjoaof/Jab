@@ -21,7 +21,7 @@ struct LoadingView: View {
                         .frame(width: 200, height: 200)
 
                     ProgressView()
-                    //Função do Loading para ir para a a tela de usuário (Estudar como fazer isso)
+                    //Função do Loading para ir para a tela de usuário (Estudar como fazer isso)
                 }
             }
         }
