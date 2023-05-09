@@ -7,15 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< Updated upstream
 		69A18B762A072F8D00BF33D7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A18B752A072F8D00BF33D7 /* LoginView.swift */; };
 		81908E8F29FB50EC00D730C4 /* jabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81908E8E29FB50EC00D730C4 /* jabApp.swift */; };
 		81908E9129FB50EC00D730C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81908E9029FB50EC00D730C4 /* ContentView.swift */; };
+=======
+		81517D7B2A09E03E00AD3879 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81517D792A09E03E00AD3879 /* Login.swift */; };
+		81517D7C2A09E03E00AD3879 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81517D7A2A09E03E00AD3879 /* LoginView.swift */; };
+		815C87D42A09A2C4005C331F /* GeometricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815C87D32A09A2C4005C331F /* GeometricView.swift */; };
+		815C87DF2A09A7F7005C331F /* quadrado.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87D62A09A7F7005C331F /* quadrado.mp3 */; };
+		815C87E02A09A7F7005C331F /* triangulo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87D72A09A7F7005C331F /* triangulo.mp3 */; };
+		815C87E12A09A7F7005C331F /* oval.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87D82A09A7F7005C331F /* oval.mp3 */; };
+		815C87E22A09A7F7005C331F /* retangulo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87D92A09A7F7005C331F /* retangulo.mp3 */; };
+		815C87E32A09A7F7005C331F /* pentagono.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87DA2A09A7F7005C331F /* pentagono.mp3 */; };
+		815C87E42A09A7F7005C331F /* losango.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87DB2A09A7F7005C331F /* losango.mp3 */; };
+		815C87E52A09A7F7005C331F /* hexagono.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87DC2A09A7F7005C331F /* hexagono.mp3 */; };
+		815C87E72A09A7F7005C331F /* trapezio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87DE2A09A7F7005C331F /* trapezio.mp3 */; };
+		815C87E92A09B3E6005C331F /* esfera.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87E82A09B3E6005C331F /* esfera.mp3 */; };
+		815C87EB2A09B7A7005C331F /* AccountRegisterField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815C87EA2A09B7A7005C331F /* AccountRegisterField.swift */; };
+		815C87ED2A09B85C005C331F /* StartAppField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815C87EC2A09B85C005C331F /* StartAppField.swift */; };
+		817474F52A0096330044F934 /* vaca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474EF2A0096320044F934 /* vaca.mp3 */; };
+		817474F62A0096330044F934 /* lion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474F02A0096320044F934 /* lion.mp3 */; };
+		817474F72A0096330044F934 /* tucano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474F12A0096330044F934 /* tucano.mp3 */; };
+		817474F82A0096330044F934 /* onça.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474F22A0096330044F934 /* onça.mp3 */; };
+		817474F92A0096330044F934 /* monkey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474F32A0096330044F934 /* monkey.mp3 */; };
+		817474FA2A0096330044F934 /* zebra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 817474F42A0096330044F934 /* zebra.mp3 */; };
+		81908E9129FB50EC00D730C4 /* CongratulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81908E9029FB50EC00D730C4 /* CongratulationView.swift */; };
+>>>>>>> Stashed changes
 		81908E9329FB50ED00D730C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81908E9229FB50ED00D730C4 /* Assets.xcassets */; };
 		81908E9629FB50ED00D730C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81908E9529FB50ED00D730C4 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< Updated upstream
 		69A18B752A072F8D00BF33D7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+=======
+		81517D792A09E03E00AD3879 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		81517D7A2A09E03E00AD3879 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		815C87D32A09A2C4005C331F /* GeometricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricView.swift; sourceTree = "<group>"; };
+		815C87D62A09A7F7005C331F /* quadrado.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quadrado.mp3; sourceTree = "<group>"; };
+		815C87D72A09A7F7005C331F /* triangulo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = triangulo.mp3; sourceTree = "<group>"; };
+		815C87D82A09A7F7005C331F /* oval.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oval.mp3; sourceTree = "<group>"; };
+		815C87D92A09A7F7005C331F /* retangulo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retangulo.mp3; sourceTree = "<group>"; };
+		815C87DA2A09A7F7005C331F /* pentagono.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pentagono.mp3; sourceTree = "<group>"; };
+		815C87DB2A09A7F7005C331F /* losango.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = losango.mp3; sourceTree = "<group>"; };
+		815C87DC2A09A7F7005C331F /* hexagono.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hexagono.mp3; sourceTree = "<group>"; };
+		815C87DE2A09A7F7005C331F /* trapezio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trapezio.mp3; sourceTree = "<group>"; };
+		815C87E82A09B3E6005C331F /* esfera.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = esfera.mp3; path = ../../../../../../Downloads/esfera.mp3; sourceTree = "<group>"; };
+		815C87EA2A09B7A7005C331F /* AccountRegisterField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegisterField.swift; sourceTree = "<group>"; };
+		815C87EC2A09B85C005C331F /* StartAppField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAppField.swift; sourceTree = "<group>"; };
+		817474EF2A0096320044F934 /* vaca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vaca.mp3; sourceTree = "<group>"; };
+		817474F02A0096320044F934 /* lion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lion.mp3; sourceTree = "<group>"; };
+		817474F12A0096330044F934 /* tucano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tucano.mp3; sourceTree = "<group>"; };
+		817474F22A0096330044F934 /* onça.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "onça.mp3"; sourceTree = "<group>"; };
+		817474F32A0096330044F934 /* monkey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = monkey.mp3; sourceTree = "<group>"; };
+		817474F42A0096330044F934 /* zebra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zebra.mp3; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		81908E8B29FB50EC00D730C4 /* jab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81908E8E29FB50EC00D730C4 /* jabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jabApp.swift; sourceTree = "<group>"; };
 		81908E9029FB50EC00D730C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,7 +81,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< Updated upstream
 		69A18B722A072F0700BF33D7 /* View */ = {
+=======
+		81517D782A09E03E00AD3879 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81517D792A09E03E00AD3879 /* Login.swift */,
+				81517D7A2A09E03E00AD3879 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		815C87D52A09A7D4005C331F /* SoundGeometric */ = {
+>>>>>>> Stashed changes
 			isa = PBXGroup;
 			children = (
 				69A18B752A072F8D00BF33D7 /* LoginView.swift */,
@@ -61,9 +121,17 @@
 		81908E8D29FB50EC00D730C4 /* jab */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< Updated upstream
 				69A18B722A072F0700BF33D7 /* View */,
 				81908E8E29FB50EC00D730C4 /* jabApp.swift */,
 				81908E9029FB50EC00D730C4 /* ContentView.swift */,
+=======
+				81517D782A09E03E00AD3879 /* View */,
+				815C87D52A09A7D4005C331F /* SoundGeometric */,
+				81D078042A092AA800D8880A /* SoundFruit */,
+				81D077E02A06DAE900D8880A /* app.swift */,
+				81D077E22A06DB2F00D8880A /* Screens */,
+>>>>>>> Stashed changes
 				81908E9229FB50ED00D730C4 /* Assets.xcassets */,
 				81908E9429FB50ED00D730C4 /* Preview Content */,
 			);
@@ -148,9 +216,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< Updated upstream
 				81908E9129FB50EC00D730C4 /* ContentView.swift in Sources */,
 				81908E8F29FB50EC00D730C4 /* jabApp.swift in Sources */,
 				69A18B762A072F8D00BF33D7 /* LoginView.swift in Sources */,
+=======
+				815C87EB2A09B7A7005C331F /* AccountRegisterField.swift in Sources */,
+				815C87ED2A09B85C005C331F /* StartAppField.swift in Sources */,
+				81908E9129FB50EC00D730C4 /* CongratulationView.swift in Sources */,
+				81D077E52A06DECA00D8880A /* Question.swift in Sources */,
+				815C87D42A09A2C4005C331F /* GeometricView.swift in Sources */,
+				81F5D47829FECCDA002BE8E0 /* GameAnimalView.swift in Sources */,
+				81517D7B2A09E03E00AD3879 /* Login.swift in Sources */,
+				81D078032A082EF400D8880A /* FruitView.swift in Sources */,
+				81517D7C2A09E03E00AD3879 /* LoginView.swift in Sources */,
+				81D077E12A06DAE900D8880A /* app.swift in Sources */,
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
