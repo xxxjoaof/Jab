@@ -47,6 +47,30 @@ let database1 = [
 
 //MARK: - Banco de dados do jogo de Animais
 
+let database2 = [
+    Question(imageName: "black", prompt: "Que cor é esse?", answer: "Preto", wrongAnswers: ["Azul","Amarelo","Marrom"]),
+    
+    Question(imageName: "blue", prompt: "Que cor é esse?", answer: "Azul", wrongAnswers: ["Vermelho","Marrom","Rosa"]),
+    
+    Question(imageName: "brown", prompt: "Que cor é esse?", answer: "Marrom", wrongAnswers: ["Cinza","Azul","Preto"]),
+    
+    Question(imageName: "gray", prompt: "Que cor é esse?", answer: "Cinza", wrongAnswers: ["Marrom","Azul","Preto"]),
+    
+    Question(imageName: "green", prompt: "Que cor é esse?", answer: "Verde", wrongAnswers: ["Cinza","Marrom","Azul"]),
+    
+    Question(imageName: "laranjacolor", prompt: "Que cor é esse?", answer: "Laranja", wrongAnswers: ["Rosa","Verde","Vermelho"]),
+    
+    Question(imageName: "pink", prompt: "Que cor é esse?", answer: "Rosa", wrongAnswers: ["Roxo","Amarelo","Vermelho"]),
+    
+    Question(imageName: "purple", prompt: "Que cor é esse?", answer: "Roxo", wrongAnswers: ["Azul","Rosa","Cinza"]),
+    
+    Question(imageName: "red", prompt: "Que cor é esse?", answer: "Vermelho", wrongAnswers: ["Roxo","Laranja","Verde"]),
+    
+    Question(imageName: "yellow", prompt: "Que cor é esse?", answer: "Amarelo", wrongAnswers: ["Preto","Rosa","Roxo"]),
+]
+
+//MARK: - Banco de dados do jogo de Animais
+
 let database3 = [
     Question(imageName: "cachorro", prompt: "Que animal é esse?", answer: "Cachorro", wrongAnswers: ["Elefante","Zebra","Macaco"]),
     

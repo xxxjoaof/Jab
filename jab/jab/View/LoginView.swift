@@ -20,7 +20,6 @@ struct LoginView: View {
     @State var authSuces: Bool = false
     
     
-    
     var body: some View {
         
         NavigationStack{
@@ -79,13 +78,13 @@ struct LoginView: View {
                 .padding()
                 
                 if authSuces {
-                    Text("Sucesso! Trocar pela Navegacao")
-                        .font(.headline)
-                        .frame(width: 200, height: 50, alignment: .center)
-                        .background(Color.green)
-                        .foregroundColor(.white)
-                        .padding(5)
-                        .cornerRadius(20)
+                    Capsule()
+                        .frame(width: 200, height: 50)
+                        .foregroundColor(Color.green)
+                    
+                    Text("Sucesso!")
+                        .foregroundColor(Color.white)
+                        .font(.system(size: 22, weight: .semibold, design: .default))
                 }
             }
         }
@@ -115,14 +114,16 @@ struct LogoImage: View {
 //MARK: - BotaoLogin
 struct LoginButton: View {
     var body: some View {
-        Text("Acessar")
-            .font(.headline)
-            .foregroundColor(.white)
-            .frame(width: 220, height:40)
-            .background(Color.blue)
-            .cornerRadius(35)
-            .padding()
-            .padding(.top, -5)
+        NavigationStack{
+            Text("Acessar")
+                .font(.headline)
+                .foregroundColor(.white)
+                .frame(width: 220, height:40)
+                .background(Color.blue)
+                .cornerRadius(35)
+                .padding()
+                .padding(.top, -5)
+        }
     }
 }
 
