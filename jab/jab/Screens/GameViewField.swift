@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GameViewField: View {
     var body: some View {
+        
         ZStack {
             //fundo azul
             Color("#0601FF")
@@ -44,8 +45,8 @@ struct GameViewField: View {
             
             VStack{
                 
-                //jogo das formas geograficas
-                Text("Formas Geográficas")
+                //jogo das formas geometricas
+                Text("Formas Geométricas")
                     .font(.system(size: 20))
                     .bold()
                     .padding(.top, 40.0)
