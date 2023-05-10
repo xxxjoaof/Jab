@@ -11,7 +11,7 @@ import SwiftUI
 struct jabApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            StartView()
         }
     }
 }

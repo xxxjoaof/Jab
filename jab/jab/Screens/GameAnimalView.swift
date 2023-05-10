@@ -103,7 +103,6 @@ struct GameAnimalView: View {
                             }
                             .disabled(selectedAnswer != nil) // disable buttons after an answer has been selected
                         }
-                        
                     }
                     
                     Button {

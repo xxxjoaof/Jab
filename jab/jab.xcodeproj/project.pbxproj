@@ -22,6 +22,7 @@
 		81517DB52A0B15B900AD3879 /* preto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81517DAB2A0B15B900AD3879 /* preto.mp3 */; };
 		81517DB62A0B15B900AD3879 /* roxo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81517DAC2A0B15B900AD3879 /* roxo.mp3 */; };
 		81517DB92A0B17E300AD3879 /* esfera.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81517DB82A0B17E300AD3879 /* esfera.mp3 */; };
+		81517DBD2A0C57A100AD3879 /* StartAppField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81517DBC2A0C57A100AD3879 /* StartAppField.swift */; };
 		815C87D42A09A2C4005C331F /* GeometricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815C87D32A09A2C4005C331F /* GeometricView.swift */; };
 		815C87DF2A09A7F7005C331F /* quadrado.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87D62A09A7F7005C331F /* quadrado.mp3 */; };
 		815C87E02A09A7F7005C331F /* triangulo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 815C87D72A09A7F7005C331F /* triangulo.mp3 */; };
@@ -77,6 +78,7 @@
 		81517DAB2A0B15B900AD3879 /* preto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = preto.mp3; sourceTree = "<group>"; };
 		81517DAC2A0B15B900AD3879 /* roxo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = roxo.mp3; sourceTree = "<group>"; };
 		81517DB82A0B17E300AD3879 /* esfera.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = esfera.mp3; sourceTree = "<group>"; };
+		81517DBC2A0C57A100AD3879 /* StartAppField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAppField.swift; sourceTree = "<group>"; };
 		815C87D32A09A2C4005C331F /* GeometricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricView.swift; sourceTree = "<group>"; };
 		815C87D62A09A7F7005C331F /* quadrado.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quadrado.mp3; sourceTree = "<group>"; };
 		815C87D72A09A7F7005C331F /* triangulo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = triangulo.mp3; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 		81D077E22A06DB2F00D8880A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				81517DBC2A0C57A100AD3879 /* StartAppField.swift */,
 				815C87EA2A09B7A7005C331F /* AccountRegisterField.swift */,
 				81908E9029FB50EC00D730C4 /* CongratulationView.swift */,
 				81F5D47729FECCDA002BE8E0 /* GameAnimalView.swift */,
@@ -389,6 +392,7 @@
 				81908E9129FB50EC00D730C4 /* CongratulationView.swift in Sources */,
 				81D077E52A06DECA00D8880A /* Question.swift in Sources */,
 				815C87D42A09A2C4005C331F /* GeometricView.swift in Sources */,
+				81517DBD2A0C57A100AD3879 /* StartAppField.swift in Sources */,
 				81F5D47829FECCDA002BE8E0 /* GameAnimalView.swift in Sources */,
 				81517DA12A0B13C800AD3879 /* ColorGameViewField.swift in Sources */,
 				81D078032A082EF400D8880A /* FruitView.swift in Sources */,
