@@ -124,9 +124,12 @@ struct GameViewField: View {
                     }
                 }
             }
+            .navigationBarBackButtonHidden()
         }
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

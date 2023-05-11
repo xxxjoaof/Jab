@@ -34,6 +34,7 @@ struct StartView: View {
     }
 }
 
+
 struct ContentView: View {
     @State var isLoading = true
     var body: some View {

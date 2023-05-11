@@ -49,26 +49,23 @@ struct LoginView: View {
                     }
                     
                     
-                    Button(action:{
-                        if self.email == userEmail && self.password == userPassword{
+                    Button(action: {
+                        if self.email == userEmail && self.password == userPassword {
                             self.authSuces = true
                             self.authFail = false
-                        }
-                        else{
+                        } else {
                             self.authFail = true
                             self.authSuces = false
                         }
-                    })
-                    {
-                        
+                    }) {
                         LoginButton()
-                        
                     }
+
                     
                     Spacer()
                     
                     NavigationLink(destination: AccountRegisterField()) {
-                    RegisterAccountField()
+                        RegisterAccountField()
                     }
                     
                     
