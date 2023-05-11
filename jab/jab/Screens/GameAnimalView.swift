@@ -151,7 +151,7 @@ struct GameAnimalView: View {
                 }
             }
             .navigationDestination(for: String.self) { score in
-                CongratulationView(score: numCorrectAnswer)
+                CongratulationView(score: $numCorrectAnswer)
             }
         }
     }

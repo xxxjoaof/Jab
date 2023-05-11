@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-let userEmail = "aluno@irmandadeswift.com.br"
+let userEmail = "aluno"
 let userPassword = "12345"
 
 struct LoginView: View {
@@ -18,6 +18,8 @@ struct LoginView: View {
     
     @State var authFail: Bool = false
     @State var authSuces: Bool = false
+    
+    @State var loginSuccess: Bool = false
     
     
     var body: some View {
@@ -53,6 +55,7 @@ struct LoginView: View {
                         if self.email == userEmail && self.password == userPassword {
                             self.authSuces = true
                             self.authFail = false
+                            self.loginSuccess = true
                         } else {
                             self.authFail = true
                             self.authSuces = false
@@ -60,27 +63,17 @@ struct LoginView: View {
                     }) {
                         LoginButton()
                     }
-
+                    
                     
                     Spacer()
                     
                     NavigationLink(destination: AccountRegisterField()) {
                         RegisterAccountField()
                     }
-                    
-                    
-                }
+                }.navigationDestination(isPresented: $loginSuccess, destination: {
+                    GameViewField(question: database1.first!)
+                })
                 .padding()
-                
-                if authSuces {
-                    Capsule()
-                        .frame(width: 200, height: 50)
-                        .foregroundColor(Color.green)
-                    
-                    Text("Sucesso!")
-                        .foregroundColor(Color.white)
-                        .font(.system(size: 22, weight: .semibold, design: .default))
-                }
             }
         }
     }

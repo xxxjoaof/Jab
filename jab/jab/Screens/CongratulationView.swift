@@ -9,108 +9,107 @@ import SwiftUI
 
 struct CongratulationView: View {
     
-    @State var score: Int
+    @Binding var score: Int
     
     var body: some View {
-        
-        NavigationStack {
-            ZStack{
-                //Cor de fundo geral
-                Color("#0601FF")
-                    .ignoresSafeArea(.all)
+        ZStack{
+            //Cor de fundo geral
+            Color("#0601FF")
+                .ignoresSafeArea(.all)
+            
+            //Background confetti de fundo geral
+            Image("Confetti")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 1400, height: 1400, alignment: .center)
+                .position(x: 0, y: 600)
+            
+            Image("Logo_App")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100, height: 100)
+                .position(x: 350, y: 25)
+            
+            VStack{
+                //Título da tela
+                Text("Parabéns!!!")
+                    .font(.system(size: 50, weight: .semibold, design: .default))
+                    .foregroundColor(Color("#E6BD0A"))
                 
-                //Background confetti de fundo geral
-                Image("Confetti")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 1400, height: 1400, alignment: .center)
-                    .position(x: 0, y: 600)
-                
-                Image("Logo_App")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 100, height: 100)
-                    .position(x: 350, y: 25)
-                
-                VStack{
-                    //Título da tela
-                    Text("Parabéns!!!")
-                        .font(.system(size: 50, weight: .semibold, design: .default))
-                        .foregroundColor(Color("#E6BD0A"))
+                //Circulos com Imagem de Parabéns no centro
+                ZStack{
+                    Circle()
+                        .frame(width: 300, height: 300, alignment: .top)
+                        .foregroundColor(Color("#09E805"))
                     
-                    //Circulos com Imagem de Parabéns no centro
+                    Circle()
+                        .frame(width: 270, height: 270, alignment: .top)
+                        .foregroundColor(Color("#FFFFFF"))
+                    
+                    //Imagem batendo palmas
+                    Image("Batendo_Palmas")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 200, height: 200, alignment: .center)
+                }
+                
+                HStack{
                     ZStack{
-                        Circle()
-                            .frame(width: 300, height: 300, alignment: .top)
+                        Capsule()
+                            .frame(width: 150, height: 50)
                             .foregroundColor(Color("#09E805"))
                         
+                        Text("Acertos:")
+                            .font(.system(size: 25, weight: .semibold, design: .default))
+                            .foregroundColor(Color.black)
+                    }
+                    
+                    ZStack{
+                        
                         Circle()
-                            .frame(width: 270, height: 270, alignment: .top)
-                            .foregroundColor(Color("#FFFFFF"))
+                            .frame(width: 50, height: 50)
+                            .foregroundColor(Color("#09E805"))
                         
-                        //Imagem batendo palmas
-                        Image("Batendo_Palmas")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 200, height: 200, alignment: .center)
+                        
+                        
+                        Text(String(score))
+                            .foregroundColor(Color.black)
+                            .font(.system(size: 25, weight: .semibold, design: .default))
+                    }
+                }
+                .padding()
+                
+                VStack{
+                    ZStack{
+                        Capsule()
+                            .frame(width: 230, height: 50)
+                            .foregroundColor(Color("#09E805"))
+                        
+                        Text("Reiniciar")
+                            .font(.system(size: 25, weight: .semibold, design: .default))
+                            .foregroundColor(Color.black)
                     }
                     
-                    HStack{
-                        ZStack{
-                            Capsule()
-                                .frame(width: 150, height: 50)
-                                .foregroundColor(Color("#09E805"))
-                            
-                            Text("Acertos:")
-                                .font(.system(size: 25, weight: .semibold, design: .default))
-                                .foregroundColor(Color.black)
-                        }
-                        
-                        ZStack{
-                            
-                            Circle()
-                                .frame(width: 50, height: 50)
-                                .foregroundColor(Color("#09E805"))
-
-                            
-                            
-                            Text(String(score))
-                                .foregroundColor(Color.black)
-                                .font(.system(size: 25, weight: .semibold, design: .default))
-                        }
-                    }
-                    .padding()
-                    
-                    VStack{
+                    NavigationLink(destination:GameViewField(question: database1.first!)) {
                         ZStack{
                             Capsule()
                                 .frame(width: 230, height: 50)
-                                .foregroundColor(Color("#09E805"))
+                                .foregroundColor(Color("#FF0000"))
                             
-                            Text("Reiniciar")
+                            Text("Menu Inicial")
                                 .font(.system(size: 25, weight: .semibold, design: .default))
-                                .foregroundColor(Color.black)
+                                .foregroundColor(Color("#FFFFFF"))
                         }
-                        NavigationLink(destination:GameViewField(question: database1.first!)) {
-                            ZStack{
-                                Capsule()
-                                    .frame(width: 230, height: 50)
-                                    .foregroundColor(Color("#FF0000"))
-                                
-                                Text("Menu Inicial")
-                                    .font(.system(size: 25, weight: .semibold, design: .default))
-                                    .foregroundColor(Color("#FFFFFF"))
-                            }
-                        }
-                    }.padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
-                }.padding(EdgeInsets(top: 50, leading: 0, bottom: 0, trailing: 0))
-            }
+                    }
+                }.padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
+            }.padding(EdgeInsets(top: 50, leading: 0, bottom: 0, trailing: 0))
         }
     }
 }
 
+
 struct CongratulationView_Previews: PreviewProvider {
     static var previews: some View {
-        CongratulationView(score: 0)
+        CongratulationView(score: .constant(0))
     }
 }
