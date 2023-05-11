@@ -90,7 +90,12 @@ struct CongratulationView: View {
                             .foregroundColor(Color.black)
                     }
                     
-                    NavigationLink(destination:GameViewField(question: database1.first!)) {
+                    
+
+                    
+                    Button {
+                        GameViewField(question: database1.first!)
+                    } label: {
                         ZStack{
                             Capsule()
                                 .frame(width: 230, height: 50)
@@ -101,6 +106,9 @@ struct CongratulationView: View {
                                 .foregroundColor(Color("#FFFFFF"))
                         }
                     }
+
+
+            
                 }.padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
             }.padding(EdgeInsets(top: 50, leading: 0, bottom: 0, trailing: 0))
         }
