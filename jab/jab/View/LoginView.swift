@@ -60,17 +60,15 @@ struct LoginView: View {
                         }
                     })
                     {
+                        
                         LoginButton()
                         
                     }
                     
                     Spacer()
                     
-                    Button {
-                        print("Clicou em esqueceu a senha.")
-                    } label: {
-                        
-                        RegisterAccountField()
+                    NavigationLink(destination: AccountRegisterField()) {
+                    RegisterAccountField()
                     }
                     
                     
