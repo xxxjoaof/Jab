@@ -19,139 +19,134 @@ struct GameAnimalView: View {
     @State var success = false
     @State var selectedAnswer: String? = nil
     @State var numCorrectAnswer: Int = 0
-    @State var navigationPath = NavigationPath()
+    @Binding var navigationPath: NavigationPath
     
     var body: some View {
-        NavigationStack(path: $navigationPath) {
-            ZStack{
-                Color("#0601FF")
-                    .ignoresSafeArea(.all)
-                
-                Button {
-                       print("Clicou em voltar para Menu")
-                   } label: {
-                       Image(systemName: "arrow.uturn.backward")
-                       .position(x: 25, y: -250)
-                       .frame(width: 330, height: 300, alignment: .center)
-                       .font(.system(size: 40, weight: .semibold, design: .default))
-                       .foregroundStyle(.white)
-                   }
-                   .position(x: 25, y: -250) // Define a posição do botão
-                
-                Capsule()
-                    .frame(width: 700, height: 700)
+        ZStack{
+            Color("#0601FF")
+                .ignoresSafeArea(.all)
+
+            Button {
+                print("Clicou em voltar para Menu")
+            } label: {
+                Image(systemName: "arrow.uturn.backward")
+                    .position(x: 25, y: -250)
+                    .frame(width: 330, height: 300, alignment: .center)
+                    .font(.system(size: 40, weight: .semibold, design: .default))
+                    .foregroundStyle(.white)
+            }
+            .position(x: 25, y: -250) // Define a posição do botão
+
+            Capsule()
+                .frame(width: 700, height: 700)
+                .foregroundColor(Color("#FFFFFF"))
+                .offset(x: 0, y: 400)
+
+            Capsule()
+                .frame(width: 700, height: 700)
+                .foregroundColor(Color("#37B5FE"))
+                .offset(x: 0, y: 450)
+
+            Spacer()
+
+            VStack{
+                Text("\(contador + 1)/10")
+                    .font(.system(size: 30, weight: .semibold, design: .default))
                     .foregroundColor(Color("#FFFFFF"))
-                    .offset(x: 0, y: 400)
-                
-                Capsule()
-                    .frame(width: 700, height: 700)
-                    .foregroundColor(Color("#37B5FE"))
-                    .offset(x: 0, y: 450)
-                
-                Spacer()
-                
+
+                ZStack{
+
+                    Rectangle()
+                        .frame(width: 330, height: 300, alignment: .top)
+                        .cornerRadius(20)
+                        .foregroundColor(Color("#FFFFFF"))
+                        .overlay(RoundedRectangle(cornerRadius: 20)
+                            .stroke(Color.black, lineWidth: 3))
+
+                    imagensAnimais!
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 300, height: 300)
+
+                    Button(action: {
+                        self.playSound()
+                    }) {
+                        Image(systemName:"speaker.wave.2.circle.fill")
+                            .frame(width: 330, height: 300, alignment: .center)
+                            .font(.system(size: 25, weight: .black, design: .default))
+                            .foregroundStyle(.black, .green)
+                            .offset(x: 130, y: 125)
+                    }
+                }
+
+
                 VStack{
-                    Text("\(contador + 1)/10")
+                    Text(question.prompt)
                         .font(.system(size: 30, weight: .semibold, design: .default))
                         .foregroundColor(Color("#FFFFFF"))
-                    
-                    ZStack{
-                        
-                        Rectangle()
-                            .frame(width: 330, height: 300, alignment: .top)
-                            .cornerRadius(20)
-                            .foregroundColor(Color("#FFFFFF"))
-                            .overlay(RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color.black, lineWidth: 3))
-                        
-                        imagensAnimais!
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 300, height: 300)
-                        
-                        Button(action: {
-                            self.playSound()
-                        }) {
-                            Image(systemName:"speaker.wave.2.circle.fill")
-                                .frame(width: 330, height: 300, alignment: .center)
-                                .font(.system(size: 25, weight: .black, design: .default))
-                                .foregroundStyle(.black, .green)
-                                .offset(x: 130, y: 125)
-                        }
-                    }
-                    
-                    
-                    VStack{
-                        Text(question.prompt)
-                            .font(.system(size: 30, weight: .semibold, design: .default))
-                            .foregroundColor(Color("#FFFFFF"))
-                        
-                        ForEach(question.allAnswers(), id: \.self) { answer in
-                            Button {
-                                selectedAnswer = answer
-                                validate(selected: answer)
-                            } label: {
-                                ZStack{
-                                    Capsule()
-                                        .frame(width: 250, height: 50)
-                                        .foregroundColor(selectedAnswer == answer ? (success ? .green : .red) : Color("#D9D9D9"))
-                                    
-                                    Text(answer)
-                                        .font(.system(size: 25, weight: .semibold, design: .default))
-                                        .foregroundColor(Color.black)
-                                }
-                            }
-                            .disabled(selectedAnswer != nil) // disable buttons after an answer has been selected
-                        }
-                    }
-                    
-                    Button {
-                        if selectedAnswer != nil {
-                            selectedAnswer = nil
-                            success = false
-                            contador += 1
-                            if contador <= 9 {
-                                question = questionList[contador]
-                            }
-                            
-                            // atualiza a imagem para a próxima pergunta
-                            if contador == 0 {
-                                self.imagensAnimais = Image("cachorro")
-                            } else if contador == 1 {
-                                self.imagensAnimais = Image("elefante")
-                            } else if contador == 2 {
-                                self.imagensAnimais = Image("gato")
-                            } else if contador == 3 {
-                                self.imagensAnimais = Image("jacaré")
-                            } else if contador == 4 {
-                                self.imagensAnimais = Image("leao")
-                            } else if contador == 5 {
-                                self.imagensAnimais = Image("macaco")
-                            } else if contador == 6 {
-                                self.imagensAnimais = Image("onça")
-                            } else if contador == 7 {
-                                self.imagensAnimais = Image("tucano")
-                            } else if contador == 8 {
-                                self.imagensAnimais = Image("vaca")
-                            } else if contador == 9 {
-                                self.imagensAnimais = Image("zebra")
-                            } else if contador == 10 {
-                                navigationPath.append("congratulation_view")
+
+                    ForEach(question.allAnswers(), id: \.self) { answer in
+                        Button {
+                            selectedAnswer = answer
+                            validate(selected: answer)
+                        } label: {
+                            ZStack{
+                                Capsule()
+                                    .frame(width: 250, height: 50)
+                                    .foregroundColor(selectedAnswer == answer ? (success ? .green : .red) : Color("#D9D9D9"))
+
+                                Text(answer)
+                                    .font(.system(size: 25, weight: .semibold, design: .default))
+                                    .foregroundColor(Color.black)
                             }
                         }
-                    } label: {
-                        Text("Next")
-                            .font(.system(size: 35, weight: .semibold, design: .default))
+                        .disabled(selectedAnswer != nil) // disable buttons after an answer has been selected
                     }
-                    .foregroundColor(Color.black)
-                    .frame(width: 150, height: 50)
-                    .background(Color("#E6BD0A"))
-                    .cornerRadius(30)
-                    .padding(EdgeInsets(top: 30, leading: 0, bottom: 1, trailing: 0))
                 }
-            }
-            .navigationDestination(for: String.self) { score in
-                CongratulationView(score: $numCorrectAnswer)
+
+                Button {
+                    if selectedAnswer != nil {
+                        selectedAnswer = nil
+                        success = false
+                        contador += 1
+                        if contador <= 9 {
+                            question = questionList[contador]
+                        }
+
+                        // atualiza a imagem para a próxima pergunta
+                        if contador == 0 {
+                            self.imagensAnimais = Image("cachorro")
+                        } else if contador == 1 {
+                            self.imagensAnimais = Image("elefante")
+                        } else if contador == 2 {
+                            self.imagensAnimais = Image("gato")
+                        } else if contador == 3 {
+                            self.imagensAnimais = Image("jacaré")
+                        } else if contador == 4 {
+                            self.imagensAnimais = Image("leao")
+                        } else if contador == 5 {
+                            self.imagensAnimais = Image("macaco")
+                        } else if contador == 6 {
+                            self.imagensAnimais = Image("onça")
+                        } else if contador == 7 {
+                            self.imagensAnimais = Image("tucano")
+                        } else if contador == 8 {
+                            self.imagensAnimais = Image("vaca")
+                        } else if contador == 9 {
+                            self.imagensAnimais = Image("zebra")
+                        } else if contador == 10 {
+                            navigationPath.append(RoutePath.congratulation(score: numCorrectAnswer))
+                        }
+                    }
+                } label: {
+                    Text("Next")
+                        .font(.system(size: 35, weight: .semibold, design: .default))
+                }
+                .foregroundColor(Color.black)
+                .frame(width: 150, height: 50)
+                .background(Color("#E6BD0A"))
+                .cornerRadius(30)
+                .padding(EdgeInsets(top: 30, leading: 0, bottom: 1, trailing: 0))
             }
         }
     }
@@ -209,7 +204,7 @@ struct GameAnimalView: View {
 struct GameAnimalView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack{
-            GameAnimalView(question:database3.first!)
+            GameAnimalView(question:database3.first!, navigationPath: .constant(NavigationPath()))
         }
     }
 }

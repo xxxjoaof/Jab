@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CongratulationView: View {
-    
+
+    @Binding var navigationPath: NavigationPath
     @Binding var score: Int
     
     var body: some View {
@@ -94,7 +95,7 @@ struct CongratulationView: View {
 
                     
                     Button {
-                        GameViewField(question: database1.first!)
+                        navigationPath.removeLast(2)
                     } label: {
                         ZStack{
                             Capsule()
@@ -106,9 +107,6 @@ struct CongratulationView: View {
                                 .foregroundColor(Color("#FFFFFF"))
                         }
                     }
-
-
-            
                 }.padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
             }.padding(EdgeInsets(top: 50, leading: 0, bottom: 0, trailing: 0))
         }
@@ -118,6 +116,6 @@ struct CongratulationView: View {
 
 struct CongratulationView_Previews: PreviewProvider {
     static var previews: some View {
-        CongratulationView(score: .constant(0))
+        CongratulationView(navigationPath: .constant(NavigationPath()), score: .constant(0))
     }
 }

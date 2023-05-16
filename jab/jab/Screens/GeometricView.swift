@@ -19,10 +19,9 @@ struct GeometricView: View {
     @State var success = false
     @State var selectedAnswer: String? = nil
     @State var numCorrectAnswer: Int = 0
-    @State var navigationPath = NavigationPath()
+    @Binding var navigationPath: NavigationPath
     
     var body: some View {
-        NavigationStack(path: $navigationPath) {
             ZStack{
                 Color("#0601FF")
                     .ignoresSafeArea(.all)
@@ -135,7 +134,8 @@ struct GeometricView: View {
                             } else if contador == 8 {
                                 self.imagensAnimais = Image("triangulo")
                             } else if contador == 9 {
-                                navigationPath.append("congratulation_view")
+                                navigationPath.append(
+                                    RoutePath.congratulation(score: numCorrectAnswer))
                             }
                         }
                     } label: {
@@ -149,10 +149,6 @@ struct GeometricView: View {
                     .padding(EdgeInsets(top: 30, leading: 0, bottom: 1, trailing: 0))
                 }
             }
-            .navigationDestination(for: String.self) { score in
-                CongratulationView(score: $numCorrectAnswer)
-            }
-        }
     }
     
     func validate(selected: String) {
@@ -209,7 +205,7 @@ struct GeometricView: View {
 struct GeometricView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack{
-            GeometricView(question:database1.first!)
+            GeometricView(question:database1.first!, navigationPath: .constant(NavigationPath()))
         }
     }
 }

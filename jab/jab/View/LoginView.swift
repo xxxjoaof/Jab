@@ -8,8 +8,8 @@
 import SwiftUI
 
 
-let userEmail = "aluno"
-let userPassword = "12345"
+let userEmail = ""
+let userPassword = ""
 
 struct LoginView: View {
     
@@ -19,13 +19,12 @@ struct LoginView: View {
     @State var authFail: Bool = false
     @State var authSuces: Bool = false
     
-    @State var loginSuccess: Bool = false
-    
+    //    @State var loginSuccess: Bool = false
+    @State var navigationPath: NavigationPath = NavigationPath()
     
     var body: some View {
-        
-        NavigationStack{
-            ZStack{
+        NavigationStack(path: $navigationPath) {
+            ZStack {
                 Color(red: 0.946, green: 0.963, blue: 0.955, opacity: 0.865)
                     .ignoresSafeArea()
                 
@@ -55,7 +54,8 @@ struct LoginView: View {
                         if self.email == userEmail && self.password == userPassword {
                             self.authSuces = true
                             self.authFail = false
-                            self.loginSuccess = true
+                            //                            self.loginSuccess = true
+                            navigationPath.append(RoutePath.gameList)
                         } else {
                             self.authFail = true
                             self.authSuces = false
@@ -63,6 +63,8 @@ struct LoginView: View {
                     }) {
                         LoginButton()
                     }
+
+
                     
                     
                     Spacer()
@@ -70,10 +72,13 @@ struct LoginView: View {
                     NavigationLink(destination: AccountRegisterField()) {
                         RegisterAccountField()
                     }
-                }.navigationDestination(isPresented: $loginSuccess, destination: {
-                    GameViewField(question: database1.first!)
-                })
-                .padding()
+                    .padding()
+
+                }
+            }
+
+            .navigationDestination(for: RoutePath.self) { path in
+                path.view($navigationPath)
             }
         }
     }
@@ -102,16 +107,14 @@ struct LogoImage: View {
 //MARK: - BotaoLogin
 struct LoginButton: View {
     var body: some View {
-        NavigationStack{
-            Text("Acessar")
-                .font(.headline)
-                .foregroundColor(.white)
-                .frame(width: 220, height:40)
-                .background(Color.blue)
-                .cornerRadius(35)
-                .padding()
-                .padding(.top, -5)
-        }
+        Text("Acessar")
+            .font(.headline)
+            .foregroundColor(.white)
+            .frame(width: 220, height:40)
+            .background(Color.blue)
+            .cornerRadius(35)
+            .padding()
+            .padding(.top, -5)
     }
 }
 
@@ -167,6 +170,64 @@ struct RegisterAccountField: View {
                 .foregroundColor(Color.gray)
                 .font(.system(size: 13, weight:.medium, design: .default))
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+        }
+    }
+}
+
+enum RoutePath: Hashable {
+
+    case gameList
+    case geometricGame(question: Question)
+    case fruitGame(question: Question)
+    case colorGame(question: Question)
+    case animalGame(question: Question)
+    case congratulation(score: Int)
+
+    @ViewBuilder func view(_ path: Binding<NavigationPath>) -> some View{
+        switch self {
+        case .gameList:
+            GameViewField(navigationPath: path)
+        case let .geometricGame(question):
+            GeometricView(question: question, navigationPath: path)
+        case let .fruitGame(question):
+            FruitView(question: question, navigationPath: path)
+        case let .colorGame(question):
+            ColorGameViewField(question: question, navigationPath: path)
+        case let .animalGame(question):
+            GameAnimalView(question: question, navigationPath: path)
+        case let .congratulation(score):
+            CongratulationView(navigationPath: path, score: .constant(score))
+        }
+    }
+
+    func hash(into hasher: inout Hasher) {
+        switch self {
+        case .gameList:
+            break
+        case let .geometricGame(question):
+            hasher.combine(question)
+        case let .fruitGame(question):
+            hasher.combine(question)
+        case let .colorGame(question):
+            hasher.combine(question)
+        case let .animalGame(question):
+            hasher.combine(question)
+        case let .congratulation(score):
+            hasher.combine(score)
+        }
+    }
+
+    static func == (lhs: RoutePath, rhs: RoutePath) -> Bool {
+        switch (lhs, rhs) {
+        case (.gameList, .gameList),
+            (.geometricGame, .geometricGame),
+            (.fruitGame, .fruitGame),
+            (.colorGame, .colorGame),
+            (.animalGame, .animalGame),
+            (.congratulation, .congratulation):
+            return true
+        default:
+            return false
         }
     }
 }

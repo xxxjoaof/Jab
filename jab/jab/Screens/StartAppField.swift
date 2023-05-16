@@ -28,10 +28,12 @@ struct LoadingView: View {
 
 
 struct StartView: View {
+//    @State var navigationPath = NavigationPath()
     var body: some View {
-        NavigationStack {
-            ContentView()
-        }
+//        NavigationStack(path: $navigationPath) {
+            //            ContentView()
+            LoginView()
+//        }
     }
 }
 
@@ -39,19 +41,19 @@ struct StartView: View {
 struct ContentView: View {
     @State var isLoading = true
     var body: some View {
-        ZStack{
-            if isLoading {
+//        ZStack{
+//            if isLoading {
                 LoadingView()
-                    
-            } else {
-                LoginView()
-            }
-        }.onAppear {
+//
+//            } else {
+//                LoginView()
+//            }
+//        }.onAppear {
             // Carregando com tempo de 3 segundos
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                isLoading = false
-            }
-        }
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//                isLoading = false
+//            }
+//        }
     }
 }
 
