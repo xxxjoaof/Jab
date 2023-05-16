@@ -41,19 +41,19 @@ struct StartView: View {
 struct ContentView: View {
     @State var isLoading = true
     var body: some View {
-//        ZStack{
-//            if isLoading {
+        ZStack{
+            if isLoading {
                 LoadingView()
-//
-//            } else {
-//                LoginView()
-//            }
-//        }.onAppear {
-            // Carregando com tempo de 3 segundos
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-//                isLoading = false
-//            }
-//        }
+
+            } else {
+                LoginView()
+            }
+        }.onAppear {
+//             Carregando com tempo de 3 segundos
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                isLoading = false
+            }
+        }
     }
 }
 
