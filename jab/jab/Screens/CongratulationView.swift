@@ -29,7 +29,7 @@ struct CongratulationView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 100, height: 100)
-                .position(x: 350, y: 25)
+                .position(x: 300, y: 25)
             
             VStack{
                 //Título da tela

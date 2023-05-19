@@ -92,7 +92,7 @@ struct GameAnimalView: View {
                         } label: {
                             ZStack{
                                 Capsule()
-                                    .frame(width: 250, height: 50)
+                                    .frame(width: 250, height: 45)
                                     .foregroundColor(selectedAnswer == answer ? (success ? .green : .red) : Color("#D9D9D9"))
 
                                 Text(answer)
@@ -146,7 +146,6 @@ struct GameAnimalView: View {
                 .frame(width: 150, height: 50)
                 .background(Color("#E6BD0A"))
                 .cornerRadius(30)
-                .padding(EdgeInsets(top: 30, leading: 0, bottom: 1, trailing: 0))
             }
         }
     }

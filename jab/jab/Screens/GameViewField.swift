@@ -17,41 +17,42 @@ struct GameViewField: View {
             Color("#0601FF")
                 .ignoresSafeArea(.all)
             //circulo no fundo
-            Circle()
+            Capsule()
                 .fill(.white)
-                .frame(width: 600, height: 900)
+                .frame(width: 800, height: 700)
+                .offset(x:5, y: 45)
 
-            Button(action: {
-                print("Clicou mini tela")
-            }, label: {
-                Image(systemName: "text.justify")
-                    .frame(width: 40, height: 40, alignment: .center)
-                    .font(.system(size: 40, weight: .semibold, design: .default))
-                    .foregroundStyle(.black)
-
-            })
-            .position(x: 140, y: 70) // Define a posição do botão
+//            Button(action: {
+//                print("Clicou mini tela")
+//            }, label: {
+//                Image(systemName: "text.justify")
+//                    .frame(width: 40, height: 40, alignment: .center)
+//                    .font(.system(size: 40, weight: .semibold, design: .default))
+//                    .foregroundStyle(.black)
+//
+//            })
+//            .position(x: 140, y: 70) // Define a posição do botão
 
 
             Image("Logo_App")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200, height: 100)
-                .offset(x: 140, y: -360)
-
+                .offset(x: 130, y: -320)
+            
             Text("Jogos")
                 .font(.system(size: 40))
                 .bold()
                 .foregroundColor(Color("#FFFFFF"))
-                .offset(x: -40, y: -350)
+                .offset(x: -0, y: -340)
 
             VStack{
-
+                
                 //jogo das formas geometricas
                 Text("Formas Geométricas")
-                    .font(.system(size: 20))
+                    .font(.system(size: 24))
                     .bold()
-                    .padding(.top, 40.0)
+                    .padding(.top, 70)
                 ZStack{
                     Rectangle()
                         .fill(.yellow)
@@ -60,14 +61,14 @@ struct GameViewField: View {
                     Image("shapes")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 110, height: 110, alignment: .center)
+                        .frame(width: 200, height: 110, alignment: .center)
                 }.onTapGesture {
                     navigationPath.append(RoutePath.geometricGame(question: database1.first!))
                 }
 
                 //jogo das cores
                 Text("Cores")
-                    .font(.system(size: 20))
+                    .font(.system(size: 24))
                     .bold()
 
                 ZStack{
@@ -78,14 +79,14 @@ struct GameViewField: View {
                     Image("cores")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 100, height: 100, alignment: .center)
+                        .frame(width: 200, height: 100, alignment: .center)
                 }.onTapGesture {
                     navigationPath.append(RoutePath.colorGame(question: database2.first!))
                 }
 
                 //jogo dos animais
                 Text("Animais")
-                    .font(.system(size: 20))
+                    .font(.system(size: 24))
                     .bold()
 
                 ZStack{
@@ -103,7 +104,7 @@ struct GameViewField: View {
 
                 //jogo das frutas
                 Text("Frutas")
-                    .font(.system(size: 20))
+                    .font(.system(size: 24))
                     .bold()
 
                 ZStack{
@@ -114,7 +115,7 @@ struct GameViewField: View {
                     Image("frutas")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 110, height: 110, alignment: .center)
+                        .frame(width: 200, height: 110, alignment: .center)
                 }.onTapGesture {
                     navigationPath.append(RoutePath.fruitGame(question: database4.first!))
                 }
