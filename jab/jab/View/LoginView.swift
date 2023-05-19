@@ -25,7 +25,7 @@ struct LoginView: View {
     var body: some View {
         NavigationStack(path: $navigationPath) {
             ZStack {
-                Color(red: 0.946, green: 0.963, blue: 0.955, opacity: 0.865)
+                Color("#F1F5F4")
                     .ignoresSafeArea()
                 
                 VStack {
